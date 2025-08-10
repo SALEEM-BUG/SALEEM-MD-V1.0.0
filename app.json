@@ -1,0 +1,58 @@
+{
+  "name": "SALEEM-MD",
+  "description": "Javascript WhatsApp bot made by 𝐒𝐀𝐋𝐄𝐄𝐌-𝐌𝐃",
+  "logo": "https://i.ibb.co/4wx2k1Rv/shaban-md.jpg",
+  "keywords": ["SALEEM-MD","SALEEM-BOT"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Must Start with 'lite~'",
+      "required": true,
+      "value": ""
+    },
+      "BOT_NAME": {
+        "description": "write here your bot name.",
+        "required": true,
+        "value": "𝐒𝐀𝐋𝐄𝐄𝐌-𝐌𝐃"      
+    },  
+    "MODE": {
+      "description": "Set private/public/inbox/groups",
+      "required": false,
+      "value": "public"
+     },
+   
+    "PREFIX": {
+      "description": "Your Bot Prefix (default: .) You can put your own custom prefix",
+      "required": true,
+      "value": "."
+    },
+    
+    "OWNER_NAME": {
+      "description": "Put Owner Name Here",
+      "required": true,
+      "value": "𝐒𝐀𝐋𝐄𝐄𝐌-𝐌𝐀𝐑𝐖𝐀𝐓"
+    },
+    "OWNER_NUMBER": {
+      "description": "Put only one Owner Number Here",
+      "required": true,
+      "value": "923491221845"
+    },
+    
+    "PRESENCE": {
+      "description": "Put online/typing/recording/unavailable",
+      "required": true,
+      "value": "online"
+    }
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
+  
